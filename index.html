@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nanthini's Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fffafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffdee9;
+      background-image: linear-gradient(45deg, #ffdee9, #b5fffc);
+      text-align: center;
+      padding: 80px 20px;
+      border-bottom: 5px solid #ffb6c1;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header h1 span {
+      color: #d63384;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    header button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    header button:hover {
+      background-color: #ad2d6b;
+    }
+
+    .about {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .about img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #ffb6c1;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #fef2f7;
+    }
+
+    .projects div {
+      background-color: white;
+      border-radius: 16px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .projects div:hover {
+      transform: translateY(-5px);
+    }
+
+    .projects h3 {
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 90%;
+      max-width: 400px;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      font-family: 'Georgia', serif;
+    }
+
+    .contact button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #ad2d6b;
+    }
+
+    @media (max-width: 600px) {
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm <span>Dharshini</span></h1>
+    <p>Exploring the world of code and creativity!</p>
+    <button>See My Projects</button>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile picture" />
+    <p>I’m a student learning web development. I enjoy turning ideas into beautiful, responsive websites!</p>
+  </section>
+
+  <section class="projects">
+    <div>
+      <h3>Project 1</h3>
+      <p>Created a mobile-friendly portfolio with HTML & CSS.</p>
+    </div>
+    <div>
+      <h3>Project 2</h3>
+      <p>Developed a dynamic quiz app using JavaScript.</p>
+    </div>
+    <div>
+      <h3>Project 3</h3>
+      <p>Built a personal blog layout with responsive design.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <input type="text" placeholder="Your Name" />
+    <input type="email" placeholder="Your Email" />
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </section>
+
+</body>
+</html>
